@@ -15,6 +15,11 @@ def test_password_characters():
 # -------------------------
 
 def test_password_length_matches_input():
+    password_length = 10 # isi sesuai yang di mau
+    password = generate_password(password_length)
+    len(password)
+
+
     """
     Buat tes untuk memastikan panjang password sesuai dengan input.
     Hint: Gunakan len(password) dan bandingkan dengan panjang yang diminta.
