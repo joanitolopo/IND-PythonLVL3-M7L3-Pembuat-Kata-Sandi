@@ -67,14 +67,24 @@ def test_password_contains_lowercase_letter():
 
 def test_password_contains_digit():
     """
-    Buat tes untuk memastikan password mengandung setidaknya satu digit (angka).
+    Buat tes untuk memastikan password mengandung setidaknya satu digit.
     Hint: Gunakan any(char.isdigit() for char in password).
     """
-    pass
+    password = "Abcdef123"
+    has_digit = any(char.isdigit() for char in password)
 
-def test_password_contains_symbol():
+    if has_digit:
+        print("Valid")
+    else:
+        print("Invalid")
+    
+    
+def test_password_special_character():   
     """
     Buat tes untuk memastikan password mengandung setidaknya satu simbol (karakter spesial).
     Hint: Gunakan any(char in string.punctuation for char in password).
     """
     pass
+
+
+
