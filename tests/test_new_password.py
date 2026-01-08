@@ -1,5 +1,6 @@
 import string
 from password.new_password import generate_password
+from password.new_password import password
 
 def test_password_characters():
     """Tes untuk memastikan hanya karakter yang diizinkan yang digunakan dalam pembuatan password"""
@@ -37,6 +38,9 @@ def test_password_is_not_empty_when_length_positive():
     pass
 
 def test_password_is_empty_when_length_zero():
+    if generate_password(0) :
+        assert password == ""
+
     """
     Buat tes untuk memastikan jika panjang = 0, password yang dihasilkan adalah string kosong.
     Hint: Panggil generate_password(0) dan cek apakah hasilnya == "".

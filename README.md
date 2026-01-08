@@ -26,4 +26,4 @@ pytest
 
 ## Pembuat
 
-Kodland
+Manusia Bernama Sanzio
