@@ -15,15 +15,19 @@ def test_password_characters():
 # -------------------------
 
 def test_password_length_matches_input():
-    number = 36
-    f = generate_password(number)
-    assert len(f) == number
+    """
+    Buat tes untuk memastikan panjang password sesuai dengan input.
+    Hint: Gunakan len(password) dan bandingkan dengan panjang yang diminta.
+    """
+    pass 
 
 def test_passwords_are_random():
-    x = 34
-    eggs = generate_password(x)
-    ham = generate_password(x)
-    assert eggs != ham
+    """
+    Buat tes untuk memastikan dua password yang dibuat berturut-turut tidak sama.
+    Hint: Panggil generate_password() dua kali, lalu bandingkan hasilnya.
+    """
+    
+    pass
 
 def test_password_is_not_empty_when_length_positive():
     """
@@ -42,7 +46,6 @@ def test_password_is_empty_when_length_zero():
 def test_password_default_length_is_12():
     foo = generate_password()
     assert len(foo) == 12
-    pass
 
 def test_password_contains_uppercase_letter():
     """
