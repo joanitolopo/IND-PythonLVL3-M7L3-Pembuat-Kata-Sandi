@@ -44,11 +44,8 @@ def test_password_is_empty_when_length_zero():
     pass
 
 def test_password_default_length_is_12():
-    """
-    Buat tes untuk memastikan default panjang password adalah 12 jika tidak diberi argumen.
-    Hint: Panggil generate_password() tanpa argumen, lalu cek panjang hasilnya.
-    """
-    pass
+    foo = generate_password()
+    assert len(foo) == 12
 
 def test_password_contains_uppercase_letter():
     """
